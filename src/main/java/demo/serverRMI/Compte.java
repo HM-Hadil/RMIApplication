@@ -1,32 +1,27 @@
 package demo.serverRMI;
 
+import java.util.Date;
+
 public class Compte {
-    private Integer numCompte;
-    private String nom;
+    private int code;
+    private double solde;
+    private Date dateCreation;
 
     public  Compte(){}
 
-    public Compte(Integer numCompte, String nom, Double solde) {
-        this.numCompte = numCompte;
-        this.nom = nom;
-        Solde = solde;
+    public Compte(int code, double solde, Date dateCreation) {
+        super();
     }
 
     public Integer getNumCompte() {
-        return numCompte;
+        return code;
     }
 
     public void setNumCompte(Integer numCompte) {
-        this.numCompte = numCompte;
+        this.code = numCompte;
     }
 
-    public String getNom() {
-        return nom;
-    }
 
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
 
     public Double getSolde() {
         return Solde;
