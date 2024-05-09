@@ -1,8 +1,9 @@
 package demo.serverRMI;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Compte {
+public class Compte implements Serializable {
     private int code;
     private double solde;
     private Date dateCreation;
@@ -31,7 +32,19 @@ public class Compte {
         Solde = solde;
     }
 
-    private Double Solde;
+    public Date getDateCreation() {
+		return dateCreation;
+	}
+
+	public void setDateCreation(Date dateCreation) {
+		this.dateCreation = dateCreation;
+	}
+
+	public void setSolde(double solde) {
+		this.solde = solde;
+	}
+
+	private Double Solde;
 
 
 }

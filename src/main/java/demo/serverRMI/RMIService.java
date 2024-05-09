@@ -8,7 +8,6 @@ import java.util.List;
 
 //les classes et inteface doit etre commun entre le serveur et le client
 public class RMIService extends UnicastRemoteObject implements RMIInterface{
-    private ArrayList<Compte> compte = new ArrayList<>();
 
     protected RMIService() throws RemoteException {
     }
@@ -28,6 +27,7 @@ public class RMIService extends UnicastRemoteObject implements RMIInterface{
         comptes.add(new Compte(1, 1400, new Date()));
         comptes.add(new Compte(2, 12450, new Date()));
         comptes.add(new Compte(3, 15780, new Date()));
+        
         return comptes;
     }
 
